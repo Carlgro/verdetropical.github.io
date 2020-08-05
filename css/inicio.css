@@ -39,7 +39,7 @@ html, body{
     overflow: hidden;
 }
 
-.logo object{
+.logo > object{
     width: 100%;
     margin: -25% 0 -55% 0;
 }
@@ -80,6 +80,7 @@ html, body{
     text-align: center;
     font-size: 12vw;
     padding-top: 0.5em;
+    transition: all 1s ease-out;
 }
 
 .digito-etiqueta{
@@ -93,10 +94,50 @@ html, body{
     height: 45%;
     display: inline-flex;
     align-items: center;
+    border-radius: 10%/12%;
+    border: 2px solid #06D85F;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.6s ease-out;
+}
+
+.boton:hover{
+    outline-color: rgba(58, 238, 13, 0);
+    outline-offset: 0px;
+    background-color: black;
 }
 
 .boton > span{
     width: 100%;
-    height: auto;
-    color: white;
+    display: flex;
+    flex-direction: column;
+    color: rgba(0, 0, 0, 0.0);
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
 }
+
+.boton > span:hover{
+    color: whitesmoke;
+}
+
+.overlay:target {
+    background-color: blue;
+    opacity: 1;
+    
+}
+
+.overlay {
+/*    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;*/
+    opacity: 0;
+    visibility: hidden;
+  }
+  
