@@ -8,13 +8,11 @@ html, body{
     height: 98vh;
 }
 
-
 .area{
     grid-column: 2/12;
     grid-row: 2/12;
     overflow: hidden;
 }
-
 
 .square{
     background-color: rgb(68, 67, 55, 0.4);
@@ -142,7 +140,8 @@ html, body{
     left:0;
     opacity:0;
     pointer-events:none;
-    transition: all .01s; /* CAMBIAR 1S */
+    transition: all 1s; /* CAMBIAR 1S */
+
 }
   
 #popup:target{
