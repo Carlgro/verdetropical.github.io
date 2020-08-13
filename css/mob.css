@@ -1,0 +1,160 @@
+html, body{
+    background-color: rgb(231, 231, 231);
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    height: 98vh;
+}
+
+.area{
+    grid-column: 2/12;
+    grid-row: 2/12;
+    overflow: hidden;
+}
+
+.square{
+    background-color: rgb(68, 67, 55, 0.4);
+    border-radius: 5%;
+}           
+
+.nested-area{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    padding: 1em;
+}
+
+.item1{
+    padding: 1em;
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+.logo{
+    height: 100%;
+    overflow: hidden;
+}
+
+.logo > object{
+    width: 100%;
+    margin: -25% 0 -50% 0;
+}
+
+.logodsp{
+    display: none;
+}
+
+
+.item3{
+    padding: 0em;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.item2{
+    padding: 1em; 
+    flex-grow: 2;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1.2em;
+    margin: 8%;
+}
+
+.inner-sqr{
+    width: 100%;
+    height: 90%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: -5%;
+}
+
+.inner-sqr:hover{
+    background-color: rgb(255, 255, 255, 0.8);
+}
+
+.digito{
+    flex-grow: 2;
+    text-align: center;
+    font-size: 12vw;
+    padding-top: 0.5em;
+    transition: all 1s ease-out;
+}
+
+.digito-etiqueta{
+    flex-grow: 1;
+    text-align: center;
+}
+
+.boton{
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 50%;
+    height: 45%;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 10%/12%;
+    border: 2px solid #909752;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.45s ease-out;
+}
+
+.boton:hover{
+    outline-color: rgba(58, 238, 13, 0);
+    outline-offset: 0px;
+    background-color: rgb(255, 255, 255, 1);
+}
+
+.boton > span{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    color: rgba(0, 0, 0, 0.0);
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+
+.boton > span:hover{
+    color: #444337;
+}
+
+
+.modal-contenido{
+    background-color: rgb(249, 249, 249, 1);
+    width: 85%;
+    height: 65%;
+    padding: 10px 20px;
+    margin: 20% auto;
+    position: relative;
+    font-size: 3.5vh;
+}
+  
+
+.modal{
+    background-color: rgba(0, 0, 0, 0.8);
+    position:fixed;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    opacity:0;
+    pointer-events:none;
+    transition: all .01s; /* CAMBIAR 1S */
+}
+  
+#popup:target{
+    opacity:1;
+    pointer-events:auto;
+}
+  
+iframe{
+    width: 100%;
+    height: 90%;
+    overflow: hidden;
+}

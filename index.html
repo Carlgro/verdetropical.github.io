@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Verde Tropical</title>
-    <link rel="stylesheet" media="only screen and (max-width: 700px)" href="css/inicio.css">
+    <link rel="stylesheet" media="only screen and (max-width: 700px)" href="/css/mob.css">
+    <link rel="stylesheet" media="only screen and (min-width: 701px)" href="/css/dsp.css">
     <link rel="icon" type="image/vnd.microsoft.icon" href="imagenes/hojita-favico.ico" sizes="24x24">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
@@ -13,11 +15,12 @@
             <div class="nested-area"> 
                     <div class="item1">
                         <div class="logo"> 
-                            <object type="image/svg+xml" data="imagenes/logo_vt.svg" ></object> 
+                            <object type="image/svg+xml" data="imagenes/logo_vt.svg" class="logomob"></object>
+                            <object type="image/svg+xml" data="imagenes/logo2.svg" class="logodsp"></object>
                         </div>
                     </div>
                     <div class="item2"> 
-                        <div class="inner-sqr">
+                        <div class="inner-sqr bloque">
                             <div class="digito">
                                 <span id="dias"></span>
                             </div>
@@ -25,7 +28,7 @@
                                 <span>Días</span>
                             </div>                    
                         </div>
-                        <div class="inner-sqr">
+                        <div class="inner-sqr bloque">
                             <div class="digito">
                                 <span id="horas"></span>
                             </div>
@@ -33,7 +36,7 @@
                                 <span>Horas</span>
                             </div>                    
                         </div>
-                        <div class="inner-sqr">
+                        <div class="inner-sqr bloque">
                             <div class="digito">
                                 <span id="minutos"></span>
                             </div>
@@ -41,7 +44,7 @@
                                 <span>Minutos</span>
                             </div>                    
                         </div>
-                        <div class="inner-sqr">
+                        <div class="inner-sqr bloque">
                             <div class="digito">
                                 <span id="segundos"></span>
                             </div>
@@ -52,7 +55,7 @@
                     </div>
                     <div class="item3"> 
                         <a href="#popup" class="boton">
-                            <span>Suscribirte</span>
+                            <span>Suscribirme</span>
                         </a>
                     </div>
             </div>
@@ -63,7 +66,8 @@
     <div id="popup" class="modal">
         <div class="modal-contenido">
             <a href="#">&times;</a>
-            <iframe src="https://40d7d0ed.sibforms.com/serve/MUIEAEcQKp_MhzZvBoP6Fg5_pMp7fK_qEpsYxh220WhBr8YwhLAiWFoqCpb5J6kVUedYuECI_1x88ducGDIWp5FFGEbhPz2Moj7Yyq3IWHykjVRWwu3i33sA-dqDkaGYJcrH9FitPazlt-FaIdIfZEG_mzl_2vAjV6_O8KpoY0wIz-ArphKVZMCNBe8F_DdATyuzYDQ7Ban-IDXA" frameborder="0"></iframe>
+            <iframe src="https://40d7d0ed.sibforms.com/serve/MUIEAPJtHDokKjP2SEhaOP_clJb3CeTUPYdpcE7X09WBzkA3T_guiCIZInYgEeAgHp0-XsFtv-r2oCORbZpDrQLFs3tzdCdnbyN5HeAu6nPsQbvQfHC5zpfzMnUVnsdGPIxhwgmJ-eZyUCOX8of4hzhrt3oMT71WjbsEmQG1NcI4sGUn2LFl4ZRRoZOPujpWXj0XlVUl20SeQj3y"
+            frameborder="0"></iframe>
         </div>
     </div>
 <!-- JAVASCRIPT -->
